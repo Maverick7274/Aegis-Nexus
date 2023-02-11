@@ -17,7 +17,6 @@
     />
     <link rel="stylesheet" href="css/main.css" />
     <link href="./css/aos.min.css" rel="stylesheet" />
-    <link rel="icon" href="./assets/images/icon.png" />
     <title>Upload Document</title>
   </head>
 
@@ -63,9 +62,6 @@
             <li class="nav-item">
               <a class="nav-link" href="verify.html">Verify</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="delete.html">Delete</a>
-            </li>
           </ul>
           <div class="d-flex">
             <button
@@ -88,7 +84,7 @@
     </nav>
 
     <!-- Body -->
-    <div class="container">
+    <div class="container" style="height: 100vh;  display: flex; justify-content: center; align-items: center; width: 90%;">
       <div class="alert alert-danger d-none mt-2">
         Please download MetaMask at
         <a target="_blank" href="https://metamask.io/download">Metamask Site</a>
@@ -113,7 +109,7 @@
         </div>
 
         <!-- upload form -->
-        <div data-aos="zoom-in" class="col py-3 data-upload my-3">
+        <div data-aos="zoom-in" class="col py-3 data-upload my-3" style="display: flex;">
           <input
             onchange="get_Sha3()"
             id="doc-file"
