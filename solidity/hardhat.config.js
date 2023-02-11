@@ -1,9 +1,9 @@
-require("@nomicfoundation/hardhat-toolbox");
-require('dotenv').config({path: __dirname + '/DocRepo.env'})
+require("@nomiclabs/hardhat-waffle");
+require('dotenv').config()
 
-const DEPLOYER_KEY = process.env.DEPLOYER_KEY 
-const ENDPOINT_URL = process.env.ENDPOINT_URL
-const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY
+const DEPLOYER_KEY = process.env.DEPLOYER_DOC_KEY 
+const ENDPOINT_URL = process.env.ENDPOINT_DOC_URL
+const ETHERSCAN_API_KEY = process.env.ETHERSCAN_DOC_API_KEY
 
 module.exports = 
 {
